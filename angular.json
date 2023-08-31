@@ -25,9 +25,16 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./assets/plugins/jquery/jquery.min.js",
+              "./assets/plugins/jquery-ui/jquery-ui.min.js",
+              "./assets/dist/js/adminlte.min.js",
+              "./assets/js/calendar.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "5f0967a9-6909-4530-b93a-a196153f3cb8"
   }
 }

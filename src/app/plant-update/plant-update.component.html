@@ -1,0 +1,32 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Update Plant</h3>
+    <form (ngSubmit) = "onSubmit()">
+      <div class="form-group">
+        <label>Plant Code</label>
+        <input
+          type="text"
+          class="form-control"
+          id="plantCode"
+          [(ngModel)]="plant.plantCode"
+          name="plantCode"
+          required
+        />
+      </div>
+  
+      <div class="form-group">
+        <label>Plant Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="plantDesc"
+          [(ngModel)]="plant.plantDesc"
+          name="plantDesc"
+          required
+        />
+      </div>
+       
+      <button class="btn btn-success" type="submit">Update</button>
+      <button routerLink="../plants" style="margin-left: 10px;" class='btn btn-info btn-sm delete' >BackToList</button>
+    </form>
+  </div>
+  

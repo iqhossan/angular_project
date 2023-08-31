@@ -1,0 +1,32 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Create Depot</h3>
+    <form (ngSubmit) = "onSubmit()">
+      <div class="form-group">
+        <label>Depot Code</label>
+        <input
+          type="text"
+          class="form-control"
+          id="depotCode"
+          [(ngModel)]="depot.depotCode"
+          name="depotCode"
+          required
+        />
+      </div>
+  
+      <div class="form-group">
+        <label>Depot Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="depotDesc"
+          [(ngModel)]="depot.depotDesc"
+          name="depotDesc"
+          required
+        />
+      </div>
+      <button routerLink="../depots" class='btn btn-info delete' >BackToList</button>
+      <button class="btn btn-success" type="submit" style="margin-left: 10px;">Submit</button>
+      
+    </form>
+  </div>
+  
